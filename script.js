@@ -1,5 +1,5 @@
 const inputBox = document.getElementById("input-box");
-const listConstainer = document.gerElementById("list-container");
+const listContainer = document.getElementById("list-container");
 
 function addTask(){
 	if(inputBox.value === ''){
@@ -22,7 +22,7 @@ listContainer.addEventListener("click", function(e){
 		e.target.classList.toggle("checked");
 		saveData();
 	}
-	else if(e.target.taName === "SPAN"){
+	else if(e.target.tagName === "SPAN"){
 		e.target.parentElement.remove();
 		saveData();
 	}
